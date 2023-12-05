@@ -4,7 +4,7 @@ import React from 'react';
 import { useSetupWizardContext } from './contexts/SetupWizardContext';
 import AdminInfoStep from './steps/AdminInfoStep';
 import CloudAccountConfirmation from './steps/CloudAccountConfirmation';
-import OrganizationInfoStep from './steps/OrganizationInfoStep';
+// import OrganizationInfoStep from './steps/OrganizationInfoStep';
 import RegisterServerStep from './steps/RegisterServerStep';
 
 const SetupWizardPage = (): ReactElement => {
@@ -14,10 +14,8 @@ const SetupWizardPage = (): ReactElement => {
 		case 1:
 			return <AdminInfoStep />;
 		case 2:
-			return <OrganizationInfoStep />;
-		case 3:
 			return <RegisterServerStep />;
-		case 4:
+		case 3:
 			return <CloudAccountConfirmation />;
 
 		default:

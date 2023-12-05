@@ -64,7 +64,7 @@ export const SetupWizardContext = createContext<SetupWizarContextValue>({
 	validateEmail: () => true,
 	currentStep: 1,
 	completeSetupWizard: async () => undefined,
-	maxSteps: 4,
+	maxSteps: 1,
 });
 
 export const useSetupWizardContext = (): SetupWizarContextValue => useContext(SetupWizardContext);
